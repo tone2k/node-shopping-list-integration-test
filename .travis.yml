@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: MxIy9AjpUzV0AOp+x2mpgTcvyiY0RSaRJ1nA/VXKJscsx3C1JkEL2/ki7U/25nXNxbqn1L4VTVqfL2vk69j4OjwVpNes4ljb/Jm0Drk40I/oqb840acpseS1cxNO3MS98hCUtnR1pPJPjlndIM6F+6EoNbJqpKrHbfScku4a4va2BTaoWFhNLMwS4u8ocj+aZHWBksDxdrSDHqHPG0OmCWU6z4imTfc965d7vITIlEFeStOCcPhfW+O5UCJjNOt/82BjL3Up4AVGp0FnfnzXpNr6nHsM3kZ9hen1gbIQHwFScIFKGF9rmG4WEgjUKKB9FAYLe5eBbaXo2+A6zIK50T4msSocTDwVgSf8fVu8h7NK3LlNsE8iW0t+r/Dbkc72E9aV4KjiTQfrnJZReZvi9pO94N/bZvemYOVcHky8NPK0sb1xkz+VSXLEGItVd2kQV/4n36Srq5Rmc8/9lBB3DsaG62AbXiBlrUd60GVmaOQj4zgZ9Ktz4/X48gx3qKq5d63D9wjL3vZs44nh4wCYaa99NZS/WElSKlQayX+nkuRXO4gwHG3aUvgHpqnDXaNn7vmb2BP1cjwNkYZYepdTwHeBRjM35LYLq+6cCIReQEFX7J/UTk4Ly8h4TVwJj4aFvmvJVrngucFPjbuddSTq6dls7KDqRmyTEJxEWmQA02A=
+  app: quiet-island-47729
+  on:
+    repo: tone2k/node-shopping-list-integration-test
