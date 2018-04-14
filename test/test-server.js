@@ -112,16 +112,17 @@ describe('Shopping List', function() {
         // this approach cleaner and easier to read and reason about.
         return chai.request(app)
           .put(`/shopping-list/${updateData.id}`)
-          .send(updateData);
-      })
+          .send(updateData)
       // prove that the PUT request has right status code
       // and returns updated item
-      .then(function(res) {
-        expect(res).to.have.status(200);
-        expect(res).to.be.json;
-        expect(res.body).to.be.a('object');
-        expect(res.body).to.deep.equal(updateData);
-      });
+          .then(function(res) {
+            console.log("body", res.body);
+            expect(res).to.have.status(200);
+            expect(res).to.be.json;
+            expect(res.body).to.be.a('object');
+            expect(res.body).to.deep.equal(updateData);
+          });
+        });
   });
 
   // test strategy:
